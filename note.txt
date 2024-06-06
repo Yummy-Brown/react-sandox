@@ -1,0 +1,129 @@
+download node
+npm  create vite@latest
+npm create vite@latest dashboard -- --templates react
+npm install
+npm run dev -- localhost:5173
+
+FOLDER STRUCTURE
+App.jsx
+
+
+change the project title - index.html
+cleare out app.css and index.css
+edit App.jsx
+
+jsx rules
+className
+every tag must be closed eg <br><br/> <br />
+return one thing (div, section, <></>)
+
+Create React components
+   1. name of component MUST start with a capital letter Navbar, Section1
+   2. Functions return a jsx template
+
+
+   rafce - reactarrowfunctioncomponentexport
+   import app.jsx(wherever needed)
+   import Name from 'path' - import Section from './components/Section1'
+
+CSS
+   1. global styles (app.css or index.css)
+   2. create stylesheet for every component (styles)
+   3. Inline styles - object style = {{color:}} 
+
+
+DYNAMIC VALUES - write jsx {}
+images
+   1.copy image address
+   2.image on our project - assets
+   3.import src imgNmae from 'path'
+
+
+useState
+    const [initialValue, dispatchFunction] = useState(data) 
+
+    
+
+   PROPS - passing data from parent to a child component (reusability)
+         - children - data are jsx element, do not use < />. use traditional tag <> </>
+
+
+OUTPUTING LIST - array.map
+
+Event Handling
+event - onClick, onSubmit
+event handlers - Functions
+You must not invoke handler before the event happens
+
+
+ CONDITIONAL RENDERING
+   we are rendering different based on a condition
+      1. multiple returns
+      2. short circuit evaluation 
+      3. tenary operators
+
+
+const [loading, setLoading] = useState(true)
+
+if(loading){
+   return <Loading />
+}
+   return <MainData />
+
+short circuit evaluation
+true && true
+false && false
+
+tenary operators
+
+const [show, setShow] = useState(false)
+
+{ show ? <h1>Hello World<h1/> : <h1>HELLO CLASS<h1/> }
+
+
+useEffect - used to run side useEffect
+- runs by default on every re-render(state change)
+const [num, setNum] = useState
+useEffect(callback function, dependency array list [])
+useEffect(( ) => {
+   action
+})
+
+[] - if dependency array list is empty, useEffect runs only ONCE
+[num] - if dependency array list has a value useEffect runs every time there is a state change
+
+
+React bootstrap
+npm install react-bootstrap bootstrap
+ {
+   /* the following should be in Main.jsx or App.jsx
+ }
+ import 'bootstrap/dist/css/bootstrap.min.css';
+
+ useRef - used to target dom nodes (html elements)
+ { current: }
+
+
+Custom hook - MUST start with use
+useName - useTayo
+
+
+CONTEXT API
+
+MULTIPLE PAGES
+SPA - MPA
+react-route-dom
+install npm install-router-dom
+   1. creating multiple PAGES
+   2. link one page to another
+   3. redirecting - automatic programmatic
+   4. 
+
+
+
+axios
+react - optimatization
+
+
+ 
+

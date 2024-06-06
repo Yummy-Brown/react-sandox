@@ -1,0 +1,14 @@
+.car-img {
+    width: 335px;
+    height: 250px;
+    object-fit: cover;
+}
+.car {
+    color: blue;
+    margin: auto 400px;
+    image-orientation: flip;
+}
+.list {
+    margin: auto 400px;
+   
+}
